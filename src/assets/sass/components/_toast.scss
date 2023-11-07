@@ -1,0 +1,39 @@
+ .toast {
+     padding: 20px;
+
+     .btn-group {
+         display: flex;
+         gap: 30px;
+
+         button.btn {
+             padding: 10px 20px;
+             font-size: 20px;
+             border-radius: 12px;
+             outline: none;
+             border: none;
+             background-color: #fff;
+             color: #000;
+             cursor: pointer;
+
+             &.success {
+                 background-color: green;
+                 color: #fff;
+             }
+
+             &.warning {
+                 background-color: rgb(255, 174, 0);
+                 color: #fff;
+             }
+
+             &.error {
+                 background-color: #ca0000;
+                 color: #fff;
+             }
+
+             &.info {
+                 background-color: #25238d;
+                 color: #fff;
+             }
+         }
+     }
+ }

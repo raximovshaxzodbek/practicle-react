@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../images/bg.jpg") no-repeat center;
+  background-size: cover;
+
+  main {
+    width: 100%;
+    min-height: 100vh;
+    background: #00000086;
+
+    nav {
+      width: 100%;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      background-color: #ffffff94;
+      padding: 0 20px;
+
+      menu {
+        display: flex;
+        gap: 20px;
+
+        a {
+          color: rgb(70, 70, 70);
+
+          &.active {
+            color: rgb(1, 1, 29);
+          }
+        }
+      }
+    }
+
+    header {
+      width: 100%;
+      min-height: calc(100vh - 60px);
+
+      @import "./components/toast";
+      @import "./components/modal";
+      @import "./components/tooltip";
+      @import "./components/count-up";
+    }
+  }
+}
